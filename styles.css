@@ -68,3 +68,17 @@ main {
     margin: 1rem auto;
     display: block;
 }
+.view-resume {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #6a0dad; /* Dark purple color */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.view-resume:hover {
+    background-color: #5a0c8e; /* Slightly darker purple */
+}
