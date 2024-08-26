@@ -1,135 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUTHU HARINI.A  - Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MUTHU HARINI A Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .section-bg {
+            background:#111111;
+        }
+
+        .navbar-bg {
+            background-color: #000000;
+        }
+
+        .text-primary {
+            color: #0f0f0f;
+        }
+        
+        .text-primary1 {
+            color: #ffffff;
+        }
+
+        .text-secondary {
+            color: #b3b3b3;
+        }
+
+        .btn-primary {
+            background-color: #1f8ef1;
+        }
+
+        .btn-primary:hover {
+            background-color: #1a74d1;
+        }
+
+        .rounded-image {
+            border-radius: 9999px;
+            /* Makes the image circular */
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-bg {
+            background: linear-gradient(45deg, #ff6b6b, #f0f0f0, #ff6b6b);
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @media (max-width: 768px) {
+            .text-lg {
+                font-size: 1rem;
+            }
+
+            .text-xl {
+                font-size: 1.125rem;
+            }
+
+            .text-2xl {
+                font-size: 1.5rem;
+            }
+
+            .text-3xl {
+                font-size: 1.875rem;
+            }
+
+            .text-4xl {
+                font-size: 2.25rem;
+            }
+
+            .py-24 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .px-4 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>MUTHU HARINI.A </h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#vision">Vision</a></li>
-            <li><a href="#internships">Internships</a></li>
-            <li><a href="#education">Education</a></li>
-        </ul>
+
+<body class="text-secondary animated-bg">
+
+    <!-- Navbar -->
+    <nav class="navbar-bg shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+            <h1 class="text-2xl font-bold text-primary1">MUTHU HARINI A</h1>
+            <button class="text-primary1 md:hidden px-2 py-1" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="#about" class="text-primary1 hover:text-blue-400">About</a></li>
+                <li><a href="#education" class="text-primary1 hover:text-blue-400">Education</a></li>
+                <li><a href="#skills" class="text-primary1 hover:text-blue-400">Skills</a></li>
+                <li><a href="#internship" class="text-primary1 hover:text-blue-400">Internship</a></li>
+                <li><a href="#projects" class="text-primary1 hover:text-blue-400">Projects</a></li>
+                <li><a href="#contact" class="text-primary1 hover:text-blue-400">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        
-        <section id="about" class="section">
-            <h2>About</h2>
-            <p>Dynamic Computer Science graduate with a passion for coding and innovation...</p>
-            <div class="hidden-content">
-                <p>Passionate computer science graduate eager to join a growth-focused company. Looking to leverage coding skills and problem-solving abilities to contribute to organizational success and drive innovation. </p>
-            </div>
-        </section>
-        
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Proficiency in fundamental JAVA</li>
-                <li>React JS</li>
-            </ul>
-            <div class="hidden-content">
-                <ul>
-                    <li>SQL</li>
-                    <li>Basic knowledge in Python</li>
-                    <li>Basic knowledge in C++</li>
-                </ul>
-               
-            </div>
-        </section>
-        
-        <section id="vision" class="section">
-            <h2>Vision</h2>
-            <h4>My goal is to leverage technology to make a positive impact...</h4>
-            <div class="hidden-content">
-                <p>To become a pivotal contributor in a leading IT company by leveraging my technical expertise and innovative mindset to drive impactful projects and solutions. My goal is to continuously evolve and excel in the dynamic tech landscape, fostering growth and delivering exceptional value through dedication, creativity, and collaborative problem-solving.</p>
-            </div>
-        </section>
-        
-        <section id="internships" class="section">
-            <h2>INTERNSHIP & INPLANT TRAINING</h2>
-            <ul>
-                <li>One-month training on Full Stack Development using PYTHON at Live Stream Technologies, Gandhipuram, Coimbatore, from 23.06.2023 to 23.07.2023</li>
-                <li>Two weeks training on Web Development using PHP at Phoenix Softech, Madurai, from 04.08.2022 to 20.08.2022</li>
-            </ul>
-            <div class="hidden-content">
-                <p></p>
-            </div>
-        </section>
-        
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <h3>Bachelor of Engineering in Computer Science</h3>
-            <p>AAA College of Engineering and Technology</p>
-            <p>CGPA: 8.9 (Up to 6th Semester)</p>
-            <p class="year">2021 – 2025</p>
-            <div class="hidden-content">
-                <h3>12th - Computer Science</h3>
-                <p>V.N.U.A.P.T Matric Hr Sec School</p>
-                <p>95%</p>
-                <p class="year">2019 - 2021</p>
 
-                <h3>10th</h3>
-                <p>V.N.U.A.P.T Matric Hr Sec School</p>
-                <p>93%</p>
-                <p class="year">2018 - 2019</p>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="section-bg text-primary1 text-center py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold md:text-3xl sm:text-2xl">Hi, I'm MUTHU HARINI A</h2>
+            <p class="text-xl mt-4 md:text-lg sm:text-base">COMPUTER SCIENCE ENGINEER</p>
+        </div>
+    </section>
 
-        <section id="co-curricular" class="section">
-            <h2>Co-Curricular</h2>
-            <p>Co-Curricular Activities</p>
-            <div class="hidden-content">
-                <ul>
-                    <li>Successfully completed AWS Academy Cloud Architecting course</li>
-                    <li>Completed NPTEL Distributed Computing course (Elite+Silver)</li>
-                    <li>Completed NPTEL Cloud Computing course</li>
-                    <li>Completed NPTEL Python for Data Science course</li>
-                    <li>Attended a one-day Workshop on Artificial Intelligence and Machine learning at AAA College of Engineering and Technology, Amathur on 30th April 2022</li>
-                    <li>Attended a two-day workshop on UI & UX Designing at AAA College of Engineering and Technology, Amathur on 5th and 6th September 2022</li>
-                </ul>
+    <!-- About Me Section -->
+    <section id="about" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">About Me</h3>
+        </div>
+        <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+            <div class="md:w-1/2">
+                <img src="https://i.ibb.co/g3YF7yF/profile-photo.jpg" alt="MUTHU HARINI A" class="rounded-image mx-auto w-48 h-48 md:w-64 md:h-64">
             </div>
-        </section>
+            <div class="md:w-1/2">
+                <p class="text-lg text-primary mb-4 text-justify">Dynamic Computer Science Engineering student with a passion for coding and innovation. Leveraging a strong foundation in engineering principles and a keen interest in technology to drive creative solutions and contribute effectively to software development projects.</p>
+                <p class="text-lg text-primary text-justify">Passionate computer science graduate eager to join a growth-focused company. Looking to leverage coding skills and problem-solving abilities to contribute to organizational success and drive innovation.</p>
+            </div>
+        </div>
+    </section>
+    <!-- VISIONARY Section -->
+    <section id="" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">Visionary Approach</h3>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+            <div class="text-primary space-y-6">
+                <div>
+                    <ul class="list-disc pl-5 text-secondary text-justify">
+                        <li>As an innovative software engineer with a passion for web, app, and UI/UX development, I am dedicated to integrating diverse technical skills to drive innovation and create engaging, interactive experiences.</li>
+                        <li>My goal is to blend expertise in software development with web and app design to produce groundbreaking applications and user-friendly interfaces. I aim to leverage emerging technologies, including AI and machine learning, to develop intelligent mechanics, realistic simulations, and enhanced user interactions.</li>
+                        <li>I am committed to exploring new dimensions of interactive technology and pushing the boundaries of what is possible in software, web, and app design, aspiring to lead projects that redefine user experiences and drive industry innovation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="Awards & Achievements" class="section">
-            <h2>Awards & Achievements</h2>
-            <p></p>
-            <div class="hidden-content">
-                <ul>
-                    <li>Secured FIRST RANK in Semester Examinations of Anna University for the academic years 2021-2022 and 2022-2023</li>
-                    <li>Successfully completed JUNIOR GRADE Typewriting (First Class with Distinction, Feb 2020)</li>
-                    <li>Successfully completed SENIOR GRADE Typewriting (First Class with Distinction, Feb 2022)</li>
-                </ul>
-    
-            </div>
-        </section>
-        <section id="Contact" class="section">
-            <h2>Contact</h2>
-            <p><b>Email:</b> <a href="mailto:muthuharinia30@gmail.com">muthuharinia30@gmail.com</a></p>
-            <p><b>Phone:</b> +91 9791205961</p>
-            <p><b>Address:</b> 3/21 Mariamman Kovil Street,<br>Vilampatti, Sivakasi – 626 124.</p>
-            <p> <b>LinkedIn:</b>  <a href="https://www.linkedin.com/in/muthuharini" target="_blank">https://www.linkedin.com/in/muthuharini</a></p>
-            <p><b>Date of Birth:</b> 30/03/2004</p>
-            <div class="hidden-content">
-            </div>
-        </section>
-        <section id="resume" class="section">
-                <h2>Resume</h2>
-                <a href="https://drive.google.com/file/d/1oLjtQF6ohFoQOmSDiB7wWXDfBvBHQrT8/view?usp=sharing" class="view-resume" target="_blank">View Resume</a>
-            <div class="hidden-content">
-            </div>
-        </section>
 
-    </main>
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">Education</h3>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+            <div class="text-primary1 space-y-6">
+                <div>
+                    <h4 class="text-xl font-bold">Bachelor of Engineering in Computer Science</h4>
+                    <p class="text-secondary mt-2">AAA College of Engineering and Technology</p>
+                    <p class="text-secondary mt-2">CGPA: 8.9 (Up to 6th Semester)</p>
+                    <p class="text-secondary mt-2">2021 – 2025</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">12th - Computer Science</h4>
+                    <p class="text-secondary mt-2">V.N.U.A.P.T Matric Hr Sec School</p>
+                    <p class="text-secondary mt-2">Percentage: 95%</p>
+                    <p class="text-secondary mt-2">2020 - 2021</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">10th</h4>
+                    <p class="text-secondary mt-2">V.N.U.A.P.T Matric Hr Sec School</p>
+                    <p class="text-secondary mt-2">Percentage: 93%</p>
+                    <p class="text-secondary mt-2">2018 - 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">Skills</h3>
+        </div>
+        <div class="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:justify-center md:space-y-0 md:space-x-10 text-center">
+            <!-- HTML -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/html-5.png" alt="HTML" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-orange-500/50">
+                <p class="text-lg font-bold mt-4 text-primary">HTML</p>
+            </div>
+            <!-- CSS -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/css3.png" alt="CSS" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50">
+                <p class="text-lg font-bold mt-4 text-primary">CSS</p>
+            </div>
+            <!-- JavaScript -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-yellow-500/50">
+                <p class="text-lg font-bold mt-4 text-primary">JavaScript</p>
+            </div>
+            <!-- PHP -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/php.png" alt="PHP" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/50">
+                <p class="text-lg font-bold mt-4 text-primary">Fundamental <br />PHP Development</p>
+            </div>
+            <!-- Java -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/java-coffee-cup-logo.png" alt="Java" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-red-500/50">
+                <p class="text-lg font-bold mt-4 text-primary">Fundamental JAVA</p>
+            </div>
+            <!-- C++ -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/c-plus-plus-logo.png" alt="C++" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-blue-400/50">
+                <p class="text-lg font-bold mt-4 text-primary">Fundamental C++</p>
+            </div>
+            <!-- React.js -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/ios/50/000000/react-native.png" alt="React.js" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-blue-400/50">
+                <p class="text-lg font-bold mt-4 text-primary">React JS</p>
+            </div>
+            <!-- MySQL -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://img.icons8.com/color/64/000000/mysql-logo.png" alt="MySQL" class="w-16 h-16 transition-transform transform hover:scale-110 hover:shadow-lg hover:shadow-blue-600/50">
+                <p class="text-lg font-bold mt-4 text-primary">MYSQL</p>
+            </div>
+        </div>
+    </section>
+    <!-- Co-Curricular-->
+    <section id="" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">Co-Curricular</h3>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+            <div class="text-primary1 space-y-6">
+                <div>
+                    <h4 class="text-xl font-bold">Co-Curricular Activities</h4>
+                    <ul class="list-disc pl-5 text-secondary">
+                
+                        <li>Successfully completed AWS Academy Cloud Architecting course</li>
+                        <li>Completed NPTEL Distributed Computing course (Elite+Silver)</li>
+                        <li>Completed NPTEL Cloud Computing course</li>
+                        <li>Completed NPTEL Python for Data Science course</li>
+                        <li>Attended a one-day Workshop on Artificial Intelligence and Machine learning at AAA College of Engineering and Technology, Amathur on 30th April 2022</li>
+                        <li>Attended a two-day workshop on UI & UX Designing at AAA College of Engineering and Technology, Amathur on 5th and 6th September 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Awards & Achievements-->
+    <section id="" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">Awards & Achievements</h3>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+            <div class="text-primary1 space-y-6">
+                <div>
+                    <h4 class="text-xl font-bold">Co-Curricular Activities</h4>
+                    <ul class="list-disc pl-5 text-secondary">
+                        <li>Secured FIRST RANK in Semester Examinations of Anna University for the academic years 2021-2022 and 2022-2023</li>
+                        <li>Successfully completed JUNIOR GRADE Typewriting (First Class with Distinction, Feb 2020)</li>
+                        <li>Successfully completed SENIOR GRADE Typewriting (First Class with Distinction, Feb 2022)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Internship Section -->
+    <section id="internship" class="container mx-auto px-4 py-24">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">Internship & Inplant Training</h3>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+            <div class="text-primary1 space-y-6">
+                <div>
+                  <ul class="list-disc pl-5 text-secondary">
+                            <li>One-month training on Full Stack Development using PYTHON at Live Stream Technologies, Gandhipuram, Coimbatore, from 23.06.2023 to 23.07.2023</li>
+                            <li>Two weeks training on Web Development using PHP at Phoenix Softech, Madurai, from 04.08.2022 to 20.08.2022</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Projects Section -->
+    <section id="projects" class="container mx-auto px-4 py-24 animated-bg">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-primary">My Projects</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold text-primary1">Project One</h4>
+                <p class="text-secondary mt-2">UI/UX designs for the frontend were crafted by Coffee-Shop</p>
+                <a href="https://www.figma.com/design/0UNU3EmfR8fFPDIpoemxgK/Coffee-Shop?node-id=0-1&t=De5KtIIo0m2zYsjs-0" class="btn-primary mt-4 inline-block px-4 py-2 rounded text-white">View Project</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold text-primary1">Project Two</h4>
+                <p class="text-secondary mt-2">UI/UX designs for the frontend were crafted by BeatBond</p>
+                <a href="https://www.figma.com/design/ZfiHagUkhqR0h37dqSbT0z/BeatBond?t=2bimfFMdxkPuXPp0-0" class="btn-primary mt-4 inline-block px-4 py-2 rounded text-white">View Project</a>
+            </div>
+        </div>
+    </section>
+    <div class="spaceing">
+        <section id="resume" class="container mx-auto px-4 py-20 text-center">
+            <h3 class="text-3xl font-bold text-primary">Resume</h3>
+            <a href="https://drive.google.com/drive/folders/1IOeWgjL4ymmhzroblu-RW4Y16B4JvV6V" target="_blank" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition-colors">
+                View My Resume
+            </a>
+        </section>
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-20">
+        <h3 class="text-3xl font-bold text-center text-primary">Get In Touch</h3>
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+            <div class="flex flex-col items-start space-y-4">
+                <!-- Email -->
+                <a href="mailto:muthuharinia30@gmail.com" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" class="w-6 h-6">
+                    <span class="font-bold">muthuharinia30@gmail.com</span>
+                </a>
+                <!-- Phone -->
+                <a href="tel:+91 9791205961" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" class="w-6 h-6">
+                    <span class="font-bold">+91 9791205961</span>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/muthuharini" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                    <span class="font-bold">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
